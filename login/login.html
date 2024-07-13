@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre na sua conta</title>
+    <link rel="stylesheet" href="/login/logindarkmode.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="awz">AwZ</h1>
+        <h2 class="sign-up">Sign Up</h2>
+        <div class="form">
+            <form>
+                <div class="form-group">
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" required placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="password"></label>
+                    <input type="text" id="password" name="password" required placeholder="Password">
+                </div>
+                <div class="submit-group">
+                    <label for="submit"></label>
+                <button class="submit-group" type="submit">Log in</button>
+                </div>
+            </form>
+        </div>
+        <p class="donthaveanaccount">Don´t have an account? <a href="/cadastro/cadastro.html">Sign up</a></p>
+        </div>
+    </div>
+    <button class="darkmode" onclick="toggleDarkMode()">Change theme</button>
+    <script>
+    function toggleDarkMode() {
+        var body = document.body;
+        body.classList.toggle("dark-mode");
+    }
+    </script>
+</body>
+</html>
